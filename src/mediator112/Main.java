@@ -20,11 +20,17 @@ public class Main {
 
         // Stuur een bericht naar 1 responder of met een * naar allemaal
         ambulance.verzend("Politie nodig op adres Dukaatstraat 11 in Eindhoven!!", "Politie");
+
         politie.verzend("CapiCapi Ambulance, politie is onderweg!", "Ambulance");
+
         brandweer.verzend("Aan Politie: Wij zijn ook onderweg!", "Politie");
+
         brandweer.verzend("Aan Ambulance: Zit er iemand klem?", "Ambulance");
+
         ambulance.verzend("Ja Brandweer, er zit iemand klem. Graag spoed!", "Brandweer");
+
         politie.verzend("Wij zijn er!!", "*");
+
         thuisbezorgd.verzend("Iets te drinken erbij?", "*");
 
     }

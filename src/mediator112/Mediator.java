@@ -4,30 +4,30 @@ import java.util.ArrayList;
 
 public class Mediator implements IMediator {
 
-    private ArrayList<FirstResponder> responders;
+    private ArrayList<Hulpverlener> hulpverleners;
 
     public Mediator() {
 
-        responders = new ArrayList<FirstResponder>();
+        hulpverleners = new ArrayList<Hulpverlener>();
     }
 
-    public void responderToevoegen(FirstResponder firstResponder) {
+    public void responderToevoegen(Hulpverlener hulpverlener) {
 
-        responders.add(firstResponder);
+        hulpverleners.add(hulpverlener);
     }
 
-    public void verzend(String bericht, FirstResponder originator, String naam) {
+    public void verzend(String bericht, Hulpverlener hulp, String naam) {
         //door alle responders bladeren
-        for(FirstResponder firstResponder : responders) {
+        for(Hulpverlener hulpverlener : hulpverleners) {
             //niet naar de verzender zelf sturen
-            if(firstResponder != originator) {
+            if(hulpverlener != hulp) {
                 // als *, dan naar allemaal sturen
                 if (naam == "*") {
-                    firstResponder.ontvang(bericht);
+                    hulpverlener.ontvang(bericht);
                 }
                 //anders alleen sturen naar diegene waarvoor het bedoeld is
-                else if (firstResponder.getNaam() == naam) {
-                    firstResponder.ontvang(bericht);
+                else if (hulpverlener.getNaam() == naam) {
+                    hulpverlener.ontvang(bericht);
                 }
             }
         }

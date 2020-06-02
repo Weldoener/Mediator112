@@ -1,9 +1,8 @@
 package mediator112;
 
-public class Ambulance extends FirstResponder {
+public class Ambulance extends Hulpverlener {
 
     public Ambulance(IMediator mediator, String naam) {
-
         super(mediator, naam);
     }
 

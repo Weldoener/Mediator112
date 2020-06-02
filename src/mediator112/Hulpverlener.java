@@ -1,7 +1,7 @@
 package mediator112;
 
 // De abstracte class waar de subclasses Ambulance, Politie, Brandweer en Thuisbezorgd van overerven
-public abstract class FirstResponder {
+public abstract class Hulpverlener {
 
     private IMediator mediator;
 
@@ -13,7 +13,7 @@ public abstract class FirstResponder {
     }
 
     // Constructor
-    public FirstResponder(IMediator mediator, String naam) {
+    public Hulpverlener(IMediator mediator, String naam) {
         this.naam = naam;
         this.mediator = mediator;
     }

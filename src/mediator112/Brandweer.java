@@ -1,6 +1,6 @@
 package mediator112;
 
-public class Brandweer extends FirstResponder {
+public class Brandweer extends Hulpverlener {
 
     public Brandweer(IMediator mediator, String naam) {
 
