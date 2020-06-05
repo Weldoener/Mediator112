@@ -9,6 +9,6 @@ public class Thuisbezorgd extends Hulpverlener {
 
     public void ontvang(String bericht) {
 
-        System.out.println("Thuisbezorgd.nl heeft het bericht -=:|   " + bericht + "   |:=- ontvangen");
+        System.out.println("Thuisbezorgd.nl heeft het bericht -=:|   " + bericht + "   |:=- ontvangen\r\n");
     }
 }

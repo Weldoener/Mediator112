@@ -7,7 +7,6 @@ public class Ambulance extends Hulpverlener {
     }
 
     public void ontvang(String bericht) {
-
-        System.out.println("Ambulance heeft het bericht -=:|   " + bericht + "   |:=- ontvangen");
+        System.out.println("Ambulance heeft het bericht -=:|   " + bericht + "   |:=- ontvangen\r\n");
     }
 }

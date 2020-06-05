@@ -20,10 +20,10 @@ public abstract class Hulpverlener {
 
     //verstuurd een bericht via de mediator
     public void verzend(String bericht, String naar) {
-
         mediator.verzend(bericht, this, naar);
     }
 
     // ontvang een bericht via de mediator
     public abstract void ontvang(String bericht);
+
 }
